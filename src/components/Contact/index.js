@@ -4,6 +4,7 @@ import './style.css'
 
 export const Contact = () => {
     const element = document.createElement('section')
+    element.setAttribute('id', 'contact')
     element.innerHTML = `
         <div class="container">
             <h2>Kde nás najdete</h2>
@@ -39,7 +40,7 @@ export const Contact = () => {
                         <td>9:00 - 02:00</td>
                     </tr>
                 </table>
-                <img class="contact__map" src="${imageMap}" alt="map" />
+                <img class="contact__map" src="${imageMap}" alt="Mapa" />
             </div>
         </div>
     `

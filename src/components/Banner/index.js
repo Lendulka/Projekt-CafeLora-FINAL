@@ -3,6 +3,7 @@ import './style.css'
 export const Banner = () => {
     const element = document.createElement('section')
     element.classList.add('banner')
+    element.setAttribute('id', 'banner')
     element.innerHTML = `
         <div class="container">
             <div class="banner__content">
