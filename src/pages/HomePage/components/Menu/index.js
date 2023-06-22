@@ -41,6 +41,7 @@ export const Menu = (props) => {
 
   const listDrinksElm = element.querySelector('.drinks-list')
   listDrinksElm.append(
+    // lze poslat jen Drink(oneDrink)
     ...drinks.map((oneDrink) => Drink({
       drinkId: oneDrink.id,
       name: oneDrink.name,

@@ -47,6 +47,7 @@ export const Drink = (props) => {
                 console.log(data)
                 if (data.status === 'success') {
                     element.replaceWith(Drink({
+                        // tady asi taky může být data.result
                         drinkId, name, ordered: !ordered, image, layers,
                     }))
                 } else {
@@ -59,6 +60,7 @@ export const Drink = (props) => {
 
     const drinkInfoElm = element.querySelector('.drink__info')
     drinkInfoElm.append(...layers.map((oneLayer) => Layer(
+        // zkusit dát Layer(oneLayer)
         {
             color: oneLayer.color,
             label: oneLayer.label,

@@ -23,9 +23,16 @@ export const Order = (props) => {
       .then((response) => response.json())
       .then((data) => {
         const filterResult = data.result.filter((oneOrderItem) => oneOrderItem.ordered === true)
-        element.replaceWith(Order({
-          items: filterResult,
-        }))
+        const emptyOrderElm = element.querySelector('.empty-order')
+
+        if (filterResult.length > 0) {
+          element.replaceWith(Order({
+            items: filterResult,
+          }))
+          emptyOrderElm.classList.add('empty-order--hide')
+        } else {
+          emptyOrderElm.classList.remove('empty-order--hide')
+        }
       })
 
     return element
