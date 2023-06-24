@@ -7,10 +7,11 @@ const { pathname } = window.location
 
 const appElm = document.querySelector('#app')
 
-if (pathname === '/') {
+if (pathname === BASE_PATH + '/') {
     appElm.append(HomePage())
-} else if (pathname === '/objednavka') {
+} else if (pathname === BASE_PATH + '/objednavka') {
     appElm.append(OrderPage())
 }
+
 
 
