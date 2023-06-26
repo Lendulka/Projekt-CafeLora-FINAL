@@ -1,7 +1,7 @@
 
 import { Header } from "../../components/Header"
 import { Footer } from "../../components/Footer"
-import { Order } from "../OrderPage/components/Order"
+import { Order } from "./components/Order"
 
 export const OrderPage = () => {
     const pageElement = document.createElement('div')
