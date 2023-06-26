@@ -1,7 +1,7 @@
-import { Banner } from "../HomePage/components/Banner"
-import { Menu } from "../HomePage/components/Menu"
-import { Gallery } from "../HomePage/components/Gallery"
-import { Contact } from "../HomePage/components/Contact"
+import { Banner } from "./components/Banner"
+import { Menu } from "./components/Menu"
+import { Gallery } from "./components/Gallery"
+import { Contact } from "./components/Contact"
 import { Header } from "../../components/Header"
 import { Footer } from "../../components/Footer"
 
@@ -16,3 +16,4 @@ export const HomePage = () => {
 
     return pageElement
 }
+
