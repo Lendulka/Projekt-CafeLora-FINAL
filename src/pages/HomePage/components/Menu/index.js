@@ -1,4 +1,4 @@
-import { Drink } from './components/Drink'
+import { Drink } from '../Menu/components/Drink'
 import './style.css'
 
 export const Menu = (props) => {

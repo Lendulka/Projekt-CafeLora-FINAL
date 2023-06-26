@@ -1,4 +1,4 @@
-import { OrderItem } from "../../components/OrderItem"
+import { OrderItem } from "../OrderItem"
 import './style.css'
 
 export const Order = (props) => {

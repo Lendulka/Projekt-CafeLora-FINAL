@@ -31,7 +31,9 @@ export const Drink = (props) => {
         orderBtnElm.classList.remove('order-btn--ordered')
     }
 
-    const orderDrink = () => {
+    const orderDrink = (event) => {
+        event.preventDefault()
+
         fetch(`https://cafelora.kodim.app/api/me/drinks/${drinkId}`, {
             method: 'PATCH',
             headers: {
